@@ -103,3 +103,37 @@ body {
     padding: 0;
     list-style-type: none;
 }
+
+@media screen and (min-width:600px) {
+    .page-container {
+        height: 100vh;
+        width: 100vw;
+
+    }
+
+    .content-wrapper {
+        width: 50%;
+        height: 70%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "join join"
+        "subscription why";
+        box-shadow: 0 7px 30px hsl(218, 22%, 67%);
+    }
+
+    .join {
+        grid-area: join;
+    }
+
+    .subscription {
+        grid-area: subscription;
+        border-bottom-left-radius: 5px;
+    }
+
+    .why {
+        grid-area: why;
+        border-bottom-right-radius: 5px;
+    }
+}
